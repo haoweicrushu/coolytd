@@ -1,0 +1,9 @@
+{
+  "name": "nwjs",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "shelljs": "^0.7.7"
+  }
+}

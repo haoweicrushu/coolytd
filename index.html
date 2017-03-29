@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="./dl.js"/>
     <script>
-        var dl = require('./dl.js');
-        // test.aaa();
+        var path = './';
+        var fs = require('fs');
+        
+        var reloadWatcher=fs.watch(path, function() {
+            location.reload();
+            reloadWatcher.close();
+        }); 
     </script>
 </head>
 <body>
+    <input type="text" id="url" placeholder="type a single url">
     <button onclick='dl.aaa()'>abc</button>
     
 </body>

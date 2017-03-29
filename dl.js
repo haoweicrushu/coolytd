@@ -1,13 +1,15 @@
+// nw.Window.open('./index.html',{}, function(win){});
+
+
 var shell = require('shelljs');
-module.exports = {
+var dl = {
     aaa: function() {
-        alert('sdfsdfsdf');
+        let abc = document.querySelector('#url');
+        alert(abc.value);
         shell.exec('mkdir aaaaaa');
     }
 }
-// alert('dsfsd');
-// var shell = require('shelljs');
-// alert(shell);
+
 // shell.echo('sdfsdfds');
 // shell.exec('mkdir abcddd');
 // if (!shell.which('git')) {

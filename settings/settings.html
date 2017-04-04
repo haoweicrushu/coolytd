@@ -1,1 +1,13 @@
-k
+<i class="fa fa-chevron-left previous cursorPointer" aria-hidden="true" onclick="dl.goIndex()"></i>
+<h3 class="text-center">settings</h3>
+<label>Save Path</label>
+<div class="input-group mt-2">
+    <input type="text" class="form-control cursorPointer" id="thePath" onclick="dl.openPath(event)" readonly>
+    <button type="button" type="button" class="btn btn-success ml-2" onclick="dl.savePath()"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+    <input type="file" class="hidden" id="files" onchange="dl.getPath(event)" webkitdirectory mozdirectory msdirectory odirectory
+        directory multiple/>
+</div>
+
+<div class="alert alert-success alert-dismissible saved mt-2 show fade" id="savedPathAlert" role="alert" data-dismiss="alert">
+    <strong>Saved!</strong>sdjsdfsdfsdfsdfsdf
+</div>

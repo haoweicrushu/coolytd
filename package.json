@@ -1,0 +1,11 @@
+{
+  "name": "coolytd",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "electron-reload": "^1.1.0",
+    "font-awesome": "FortAwesome/Font-Awesome",
+    "rxjs": "^5.2.1-smooth"
+  }
+}

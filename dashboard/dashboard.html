@@ -1,1 +1,12 @@
-ji
+<h3 class="text-center">coolytd</h3>
+<i class="fa fa-cog settings" aria-hidden="true" onclick="dl.goSettings()"></i>
+<form class="form-inline">
+    <div class="input-group mt-2">
+        <input type="text" class="form-control" id="singleFile">
+        <button class="btn btn-primary ml-2" type="button" onclick="dl.dlSingleFile(document.getElementById('singleFile'))"><i class="fa fa-download" aria-hidden="true"></i></button>
+    </div>
+</form>
+
+<div class="progress mt-2">
+  <div id="singleProgress" class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
